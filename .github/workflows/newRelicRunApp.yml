@@ -41,7 +41,7 @@ jobs:
       - name: Run Docker Compose with a 60m timer
         run: |
           docker-compose -f compose.yml up -d
-          sleep 1h # Leave these containers running for 1 hour to give time to finish the lab
+          sleep 2h # Leave these containers running for 1 hour to give time to finish the lab
       
       - name: Stop containers
         run: |
